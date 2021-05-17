@@ -13,6 +13,7 @@
  * NDRDY: pin 8 (active low)
  * NSS: pin 9 (active high)
  * NRST: 10 (active low)
+ * CHANGEN: 7 (active low)
  * MOSI: pin 11
  * MISO: pin 12
  * SCK: pin 13
@@ -22,10 +23,10 @@
 
 #include <SPI.h>
 
-const int ssPin = PB6; // Slave select pin
-const int drdyPin = PC7; // Data ready pin
-const int rstPin = PA9; // Reset pin
-const int intPin = PA8; // Interrupt pin
+const int ssPin = 9; // Slave select pin
+const int drdyPin = 8; // Data ready pin
+const int rstPin = 10; // Reset pin
+const int intPin = 7; // Interrupt pin
 
 void setup() {
   Serial.begin(230400);
